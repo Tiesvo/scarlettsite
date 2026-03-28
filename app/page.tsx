@@ -84,6 +84,10 @@ export default function Page() {
           </CTAButton>
 
           {/* F2F */}
+	  <CTAButton href={content.ctas[1].href} label={content.ctas[1].label}>
+            <BrandBadge brand={content.ctas[1].brand as any} />
+            <span className="font-medium">{content.ctas[1].label}</span>
+          </CTAButton>	
 	</motion.div> 
         {/* Moving strip (directly under CTAs) */}
         <div className="mt-12 w-full">
